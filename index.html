@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tausif Akbar</title>
+
+    <!-- Fonts: Space Grotesk for headings, JetBrains Mono for code/mono -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Separated CSS file - easy to read and edit -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon - browser tab logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+</head>
+
+<body>
+
+    <!-- =========================================================
+       BACKGROUND PARALLAX LAYERS
+       These are fixed behind everything and move at different speeds
+       data-speed = how much they move relative to scroll
+       ========================================================= -->
+    <div class="bg-layers">
+        <!-- Deep background huge text -->
+        <div class="parallax bg-text" data-speed="0.4">CODE</div>
+
+        <!-- Subtle dot grid -->
+        <div class="parallax bg-grid" data-speed="0.2"></div>
+
+        <!-- Yellow orb - main aesthetic element -->
+        <div class="parallax orb" data-speed="0.1" id="orb"></div>
+
+        <!-- Small secondary orb for depth -->
+        <div class="parallax orb-small" data-speed="0.15" id="orbSmall"></div>
+    </div>
+
+    <!-- =========================================================
+       NAVBAR - fixed glassmorphism
+       ========================================================= -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <div class="logo">
+                <span>TA</span>
+                <p class="mono">TAUSIF // NITEBOY17</p>
+            </div>
+            <div class="nav-links mono">
+                <a href="#about">ABOUT</a>
+                <a href="#stack">STACK</a>
+                <a href="#projects">WORK</a>
+                <a href="#contact" class="cta">LET'S TALK</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================================
+       HERO SECTION
+       ========================================================= -->
+    <section class="hero">
+        <!-- Content has slight reverse parallax (-0.05) for depth pop -->
+        <div class="hero-content parallax" data-speed="-0.05">
+            <div class="mono eyebrow">
+                <span class="dot"></span>
+                AVAILABLE FOR INTERNSHIP • CHITTAGONG, BD
+            </div>
+
+            <h1>
+                Tausif <span class="yellow">Akbar</span>
+            </h1>
+
+            <p class="hero-desc">
+                Hi I am <b>Tausif</b> — he/him <br>I build full-stack web apps, but lately I've been diving deep into
+                <span class="yellow">Machine Learning</span>—mostly experimenting with <span class="yellow">CNN
+                    models</span>, computer vision, and neural net fundamentals.
+            </p>
+
+            <div class="btns mono">
+                <a href="https://github.com/niteboy17" target="_blank" class="btn btn-yellow">GITHUB ↗</a>
+                <a href="#projects" class="btn btn-ghost">VIEW WORK</a>
+            </div>
+
+            <div class="mono hero-meta">
+                <span>he/him</span>
+                <span>🇧🇩 Bangladesh</span>
+                <span>Learning: TypeScript / Docker / System Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+       ABOUT SECTION
+       ========================================================= -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="mono section-label">01 / ABOUT</div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Building Thinkboard —<br>a MERN stack notes app.</h2>
+                    <p>
+                        I'm a Computer Science & Engineering student focused on
+                        full-stack JavaScript. I like clean UI, fast APIs, and shipping
+                        side projects that actually work.
+                    </p>
+                    <p class="muted">Ask me about React, Node.js, MongoDB, REST APIs.</p>
+                </div>
+
+                <!-- Code card styled like VS Code -->
+                <div class="code-card">
+                    <div class="code-top">
+                        <div class="dots">
+                            <i></i><i></i><i></i>
+                        </div>
+                        <span class="mono">tausif.js</span>
+                    </div>
+                    <pre class="mono"><span class="c">// whoami</span>
+<span class="k">const</span> <span class="v">tausif</span> = {
+  <span class="p">pronouns</span>:    <span class="s">"he/him"</span>,
+  <span class="p">location</span>:    <span class="s">"🇧🇩 Bangladesh"</span>,
+  <span class="p">currentWork</span>: <span class="s">"Building Thinkboard — MERN notes app"</span>,
+  <span class="p">learning</span>:    [ <span class="s">"TypeScript"</span>, <span class="s">"Docker"</span>, <span class="s">"System Design"</span> ],
+  <span class="p">askMeAbout</span>:  [ <span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"MongoDB"</span> ],
+  <span class="p">funFact</span>:     <span class="s">"I debug with console.log 😄"</span>,
+};</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+       TECH STACK
+       ========================================================= -->
+    <section class="section dark" id="stack">
+        <div class="container">
+            <div class="mono section-label">
+                02 / TECH STACK <span class="dim">— TOOLS I USE DAILY</span>
+            </div>
+
+            <div class="stack-grid">
+                <div class="stack-item"><b>React</b><span>Frontend</span></div>
+                <div class="stack-item"><b>Node.js</b><span>Runtime</span></div>
+                <div class="stack-item"><b>MongoDB</b><span>Database</span></div>
+                <div class="stack-item"><b>Express</b><span>Backend</span></div>
+                <div class="stack-item"><b>TypeScript</b><span>Typed JS</span></div>
+                <div class="stack-item"><b>Docker</b><span>Containers</span></div>
+                <div class="stack-item"><b>Tailwind</b><span>Styling</span></div>
+                <div class="stack-item"><b>React Native</b><span>Mobile</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+       PROJECTS - YOUR 5 REQUIRED PROJECTS
+       ========================================================= -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="mono section-label">
+                03 / WORK <span class="dim">— 5 FEATURED PROJECTS</span>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- 1. Mew Chat -->
+                <article class="project-card reveal">
+                    <div class="card-top mono">
+                        <span class="badge">REALTIME</span>
+                        <span class="status">● SOCKET.IO</span>
+                    </div>
+                    <h3>Mew-Chat</h3>
+                    <p>Real-time MERN chat with Socket.io, JWT auth, Cloudinary media uploads and online presence.</p>
+                    <div class="tags mono">
+                        <span>React</span><span>Socket.io</span><span>Cloudinary</span><span>MERN</span>
+                    </div>
+                    <div class="links mono">
+                        <a href="https://github.com/niteboy17/mew-chat" target="_blank">GITHUB ↗</a>
+                    </div>
+                </article>
+
+                <!-- 2. Pinch Cam -->
+                <article class="project-card reveal">
+                    <div class="card-top mono">
+                        <span class="badge badge-yellow">GESTURE • INNOVATION</span>
+                        <span class="status">● LIVE</span>
+                    </div>
+                    <h3>Pinch-Cam 📸</h3>
+                    <p>Browser camera app — make frame with both hands + pinch to capture. 3-sec countdown, download.
+                    </p>
+                    <div class="tags mono">
+                        <span>JavaScript</span><span>Hand Gestures</span><span>Camera API</span>
+                    </div>
+                    <div class="links mono">
+                        <a href="https://github.com/niteboy17/pinch-cam" target="_blank">GITHUB ↗</a>
+                        <a class="link-yellow" href="https://niteboy17.github.io/Pinch-Cam/" target="_blank">LIVE DEMO
+                            ↗</a>
+                    </div>
+                </article>
+
+                <!-- 3. Thinkboard - Featured -->
+                <article class="project-card featured reveal">
+                    <div class="card-top mono">
+                        <span class="badge badge-yellow">FEATURED • MERN</span>
+                    </div>
+                    <h3>Thinkboard</h3>
+                    <p>Production MERN notes app — create/edit/delete, Tailwind DaisyUI, rate limiting 100 req/min per
+                        IP, Toast UX.</p>
+                    <div class="tags mono">
+                        <span>React
+                            Vite</span><span>Tailwind</span><span>Node</span><span>MongoDB</span><span>Redis</span>
+                    </div>
+                    <div class="links mono">
+                        <a href="https://github.com/niteboy17/thinkboard" target="_blank">GITHUB ↗</a>
+                        <a class="link-yellow" href="https://thinkboard-1rsx.onrender.com" target="_blank">LIVE DEMO
+                            ↗</a>
+                    </div>
+                </article>
+
+                <!-- 4. Wallet App -->
+                <article class="project-card reveal">
+                    <div class="card-top mono">
+                        <span class="badge">MOBILE • FINANCE</span>
+                    </div>
+                    <h3>Wallet-App</h3>
+                    <p>Full-stack mobile expense tracker — React Native Expo + Clerk 6-digit auth, Neon PostgreSQL,
+                        Redis rate limiting.</p>
+                    <div class="tags mono">
+                        <span>React Native</span><span>Expo</span><span>Clerk</span><span>PostgreSQL</span>
+                    </div>
+                    <div class="links mono">
+                        <a href="https://github.com/niteboy17/wallet-app" target="_blank">GITHUB ↗</a>
+                    </div>
+                </article>
+
+                <!-- 5. Twitter Clone -->
+                <article class="project-card reveal">
+                    <div class="card-top mono">
+                        <span class="badge">FULL-STACK • SOCIAL</span>
+                    </div>
+                    <h3>Twitter Clone 🐦</h3>
+                    <p>Full X clone — JWT auth, profiles, follow, CRUD posts, likes/retweets/replies, media, hashtags,
+                        DMs via Socket.io, themes.</p>
+                    <div class="tags mono">
+                        <span>React
+                            18</span><span>Redux</span><span>Socket.io</span><span>JWT</span><span>MongoDB</span>
+                    </div>
+                    <div class="links mono">
+                        <a href="https://github.com/niteboy17/twitter_clone" target="_blank">GITHUB ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+       GITHUB STATS
+       ========================================================= -->
+    <section class="section dark" id="github">
+        <div class="container github-grid">
+            <div>
+                <div class="mono small-yellow">04 / GITHUB • SNAKE ANIMATION</div>
+                <h2>Watch the snake<br>eat my commits.</h2>
+                <div class="stats mono">
+                    <div><b>18+</b><span>Repos</span></div>
+                    <div><b>42</b><span>Stars</span></div>
+                    <div><b>600+</b><span>Commits</span></div>
+                </div>
+                <a class="mono link-yellow" href="https://github.com/niteboy17" target="_blank">github.com/niteboy17
+                    ↗</a>
+            </div>
+            <div class="contrib-card">
+                <div class="mono contrib-head">CONTRIBUTION GRID — SNAKE MODE <span class="dot-yellow"></span></div>
+                <div class="contrib-grid" id="contribGrid"></div>
+                <div class="mono snake-legend"><span class="legend-dot head-dot"></span> HEAD <span
+                        class="legend-dot body-dot"></span> BODY <span class="legend-dot food-dot"></span> FOOD</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+       CONTACT
+       ========================================================= -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div>
+                    <div class="mono pill">05 / CONTACT</div>
+                    <h2>Let's build<br><span class="yellow">something fast.</span></h2>
+                    <p class="muted">Open for internships, freelance MERN gigs, and collabs.</p>
+                </div>
+                <div class="contact-actions mono">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tausifakbar2002@gmail.com"
+                        class="btn btn-white">EMAIL ME ↗</a>
+                    <a href="https://www.instagram.com/__nite_boy_17__/" target="_blank" class="btn btn-ghost">INSTAGRAM
+                        ↗</a>
+                    <a href="https://github.com/niteboy17" target="_blank" class="btn btn-ghost">GITHUB ↗</a>
+                </div>
+            </div>
+
+            <div class="footer mono">
+                <span>© 2026 TAUSIF AKBAR • BLACK x YELLOW • CHITTAGONG, BD</span>
+                <span class="quote">"If the code works don't fucking touch it"</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separated JS file - easy to read -->
+    <script src="script.js"></script>
+</body>
+
+</html>
